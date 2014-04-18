@@ -1,6 +1,51 @@
+a
+{
+	color: #22BCE0;
+}
 body
 {
 	background: #EEEEEE;
 	font-family: Arial;
 	font-size: 16px;
+}
+header
+{
+	background: #344B54;
+	color: white;
+	overflow: hidden;
+	padding: 0.5em;
+	position: relative;
+}
+header figure 
+{
+	float: left;
+}
+header h1
+{
+	font-weight: normal;
+	font-size: 1.2em;
+	margin: 0 70px 0 0;
+}
+header #logo img
+{
+	border-right: 1px solid white;
+	padding-right: 0.5em;
+	margin-right: 0.5em;
+	width: 52px;
+}
+header #avatar img
+{
+	border-radius: 50%;
+	width: 55px;
+}
+header #avatar
+{
+	margin: 0.5em 0.5em 0;
+	right: 0;
+	position: absolute;
+	top: 0;
+}
+nav
+{
+	background: #80BCA3;
 }
