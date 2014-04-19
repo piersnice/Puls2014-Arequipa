@@ -37,9 +37,14 @@
 
 .icon-lapiz:before {
 	content: "\e600";
+	margin-right: 0.5em;
 }
 .icon-estrella:before {
 	content: "\e601";
+	position: relative;
+	top: 0.1em;
+	margin-right: 0.3em;
+
 }
 .icon-flecha-abajo:before {
 	content: "\e602";
@@ -48,12 +53,17 @@
 	content: "\e603";
 }
 
-
 }
 a
 {
 	color: #22BCE0;
 }
+
+aside 
+{
+	display: none;
+}
+
 body
 {
 	background: #EEEEEE;
@@ -117,7 +127,7 @@ header #avatar
 }
 nav
 {
-	background: #215F45;/*#80BCA3;*/
+	background: #2B66B1;/*#80BCA3;*/
 	box-shadow: rgba(0,0,0,0.5) 0px;
 	position: relative;
 }
@@ -181,6 +191,11 @@ footer
 {
 	color: #AAA;
 }
+
+#contenido .item .autor_item a
+{
+	color: #1376C4;
+}
 #contenido .item .datos_item
 {
 	margin: 1em 1em 0 0;
@@ -208,6 +223,7 @@ footer
 #contenido .item .imagen_item img
 {
 	width: 96px;
+	height: 128px;
 }
 
 #contenido .item .titulo_item
@@ -225,14 +241,13 @@ footer
 #contenido .item .votacion
 {
 	background: white;
-	border-radius: 0 0 0.8em 0.8em;
+	border-radius: 0 0 1em 1em;
 	position: absolute;
 	padding: 0.2em 0.5em;
 	top:	100%;
 	margin-top: 3px;
-	left: 2.5%;
-	right: 3%;
-	width: 95%;
+	left: 3%;
+	width: 90%;
 }
 #contenido .item .votacion a
 {
@@ -259,3 +274,40 @@ footer
 	float: right;
 }
 
+/*MEDIA QUERYS*/
+
+@media screen and (min-width: 800px){
+	body
+	{
+		background: #AAA;
+	}
+	#contenido 
+		{
+			overflow: hidden;
+		}
+	#contenido .item
+		{
+			width: 49%;
+			float: left;
+		}
+	#contenido .item:nth-child(odd)
+	{
+		margin-right: 2%;
+	}
+
+}
+
+@media screen and (min-width: 800px){
+	aside
+	{
+		display:block;
+		float:right;
+		margin: 0.5em;
+		width: 25%;
+		
+	}
+	aside video
+	{
+		width: 100%
+	}
+}
