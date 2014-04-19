@@ -106,12 +106,35 @@ header h1
 	font-size: 1.2em;
 	margin: 0 70px 0 0;
 }
-header #logo img
+header #logo
 {
 	border-right: 1px solid white;
 	padding-right: 0.5em;
 	margin-right: 0.5em;
+}
+header #logo img
+{
+	/*-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);*/
+	-webkit-transition: 1.5s;
 	width: 52px;
+}
+header #logo img:hover
+{
+	-webkit-transform: rotate(360deg);
+}
+header #avatar img
+{
+	/*-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);*/
+	-webkit-transition: 1.5s;
+	width: 52px;
+}
+header #avatar img:hover
+{
+	-webkit-transform: rotate(360deg);
 }
 header #avatar img
 {
@@ -148,6 +171,11 @@ nav ul li a
 	display: block;
 	padding: 0.5em;
 	text-decoration: none;
+	-webkit-transition:.5s;
+}
+nav ul li a:hover
+{
+	background: #344B54;
 }
 nav ul #publicar_nav
 {
@@ -164,6 +192,12 @@ nav ul #publicar_nav a
 	padding: 0.6em 0.8em;	
 	font-style: italic;
 	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+	-webkit-transition:5s;
+}
+nav ul #publicar_nav a:hover
+{
+	box-shadow: 0 0 30px yellow;
+	
 }
 footer
 {
