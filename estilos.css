@@ -324,7 +324,7 @@ footer
 			width: 49%;
 			float: left;
 		}
-	#contenido .item:nth-child(odd)
+	#contenido .item:nth-child(odd)/*para tomar valores como un vector*/
 	{
 		margin-right: 2%;
 	}

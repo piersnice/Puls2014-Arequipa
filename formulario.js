@@ -16,16 +16,19 @@ function agregarPost(){
 	$clone = $post.clone();
 	
 	$clone.find('.titulo_item a')
-	.text(titulo)
-	.attr('href', url);
+		.text(titulo)
+		.attr('href', url);
 
 	$clone.hide();
+
 	$list.prepend($clone);
-	$clone.fadeIn;
+
+	$clone.fadeIn();
+
 	return false;
 }
 
 //EVENTOS
 
 $button.click( mostrarFormulario );
-$form.on('submit', agregarPost);
+$form.on('submit', agregarPost );
